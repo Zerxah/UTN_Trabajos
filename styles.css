@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: left;
+    padding: 20px;
+    background: transparent;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-box {
+    display: inline-block;
+    background-color: #0e4468; /* Color del recuadro */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.principales-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.principal-box {
+    background-color: #89d4ff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 50px; /* Aumento del tamaño */
+    display: flex; /* Usar flexbox para organizar elementos */
+    flex-direction: row; /* Organizar elementos en fila */
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.principal-box:hover {
+    transform: scale(1.05);
+    background-color: #3498db; /* Cambiar el color de fondo en hover */
+}
+
+.principal-box img {
+    width: 120px; /* Aumento del tamaño */
+    height: 120px; /* Aumento del tamaño */
+    border-radius: 50%;
+    margin-right: 30px; /* Espaciado entre la imagen y el texto */
+    align-self: flex-start;
+}
+
+.text-content {
+    flex: 1; /* Ocupar todo el espacio restante en la fila */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.principal-box h3 {
+    margin: 15px 0; /* Aumento del tamaño del margen */
+    color: #333;
+}
+
+.principal-box p {
+    color: #666;
+    margin: 20px auto; /* Centrar el texto dentro del contenedor */
+    max-width: 600px; /* Ancho máximo del párrafo */
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/* Otros estilos según sea necesario */
